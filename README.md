@@ -29,7 +29,7 @@ Welcome to the official GitHub repository for BCA 3rd Semester projects at Mahar
 
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/your-repository-link.git
+   git clone https://github.com/DearPratipal/BCA-3rd_Sem-File.git
    ```
 2. Navigate to the project folder of your choice.
 3. Follow the setup instructions provided in the individual project README files.
