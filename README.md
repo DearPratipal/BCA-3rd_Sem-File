@@ -1,7 +1,4 @@
-﻿# BCA-3rd_Sem-File
-Here's a comprehensive GitHub repository description for the BCA 3rd Semester project files at Maharishi Markandeshwar (Deemed to be University), Mullana-Ambala:
 
----
 
 ## 📚 BCA 3rd Semester Project Files - Maharishi Markandeshwar Institute of Computer Technology & Business Management, Mullana-Ambala
 
