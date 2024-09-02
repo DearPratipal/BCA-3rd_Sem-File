@@ -1,0 +1,43 @@
+<!--Add the links in the webpage for, Play an Audio file, play a Video file, Download an Audio file Write a 
+program to implement linear search.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>The audio element</h1>
+        <p>Click on the play button to play a sound:</p>
+
+        <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+        <h1>The video element</h1>
+        <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+
+        <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_audio">Play an Audio file</a><br><br>
+        <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video">Play a Video file</a><br><br>
+        <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_audiobutton">Download an Audio file</a><br><br>
+
+
+    <h1>Linear Search</h1>
+
+    <form>
+        <label for="search">Enter the element to search:</label>
+        <input type="text" id="search" name="search"><br><br>
+        <label for="array">Enter the array elements:</label>
+        <input type="text" id="array" name="array" value="1,2,3,4,5"><br><br>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>

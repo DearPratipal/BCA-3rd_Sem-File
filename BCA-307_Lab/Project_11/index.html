@@ -1,0 +1,29 @@
+<!-- WAP to display date and time using different JS date formats.  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Display Date and Time using different JS date formats</h1>
+    <button onclick="displayDate()">Display Date and Time</button>
+    <p id="date"></p>
+
+    <script>
+        function displayDate() {
+            var date = new Date();
+            var options = {
+                year: 'numeric', month: '2-digit', day: '2-digit',
+                hour: '2-digit', minute: '2-digit', second: '2-digit',
+                hour12: false
+                };
+                var dateStr = date.toLocaleDateString('en-US', options);
+                document.getElementById("date").innerHTML = dateStr;
+                }
+    </script>
+    
+    
+ </body>
+ </html>
