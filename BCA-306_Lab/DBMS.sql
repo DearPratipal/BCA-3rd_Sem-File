@@ -64,7 +64,18 @@ INSERT INTO Emp4 VALUES
 
 
 --Alter/Modify command perform alteration of attribute Type and Adding New Column i.e.,
--- in Emp3 e.g. change the column name Date_of_Joining toJoining_Date, Add Column in same Table Monthly_Salary_, Yearly_Salary.
+-- in Emp3 e.g. 
+--change the column name Date_of_Joining toJoining_Date:
+ALTER TABLE Emp3
+RENAME COLUMN Date_of_Joining TO Joining_Date;
+
+
+--change the column datatype Date to VARCHAR Date_of_Joining:
+ALTER TABLE Emp3
+ALTER COLUMN Date_of_Joining VARCHAR(50);
+
+
+--Add Column in same Table Monthly_Salary_, Yearly_Salary.
 ALTER TABLE Emp3
 ADD Monthly_Salary DECIMAL(10,2),
 ADD Yearly_Salary DECIMAL(10,2);
@@ -82,8 +93,10 @@ ADD CONSTRAINT PK_Emp1 PRIMARY KEY (Emp_ID),
 ADD CONSTRAINT UQ_Emp1 UNIQUE (Emp_Contact),
 ADD CONSTRAINT NN_Emp1 NOT NULL (Emp_Qualification),
 ADD CONSTRAINT NN_Emp1 NOT NULL (Emp_Research_Area);
+
 ALTER TABLE Emp2
 ADD CONSTRAINT FK_Emp2 FOREIGN KEY (Emp_ID) REFERENCES Emp1(Emp_ID);
+
 ALTER TABLE Emp3
 ADD CONSTRAINT CK_Emp3 CHECK (Emp_Basic_Salary <= 30000);
 
